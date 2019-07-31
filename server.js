@@ -34,6 +34,10 @@ if(isUseHTTPs === false) {
 }
 
 function serverHandler(request, response) {
+    response.setHeader('Access-Control-Allow-Origin', 'https://www.elite-escortss.com');
+	response.setHeader('Access-Control-Request-Method', 'https://www.elite-escortss.com');
+	response.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH');
+	response.setHeader('Access-Control-Allow-Headers', 'https://www.elite-escortss.com');
     // to make sure we always get valid info from json file
     // even if external codes are overriding it
     config = getValuesFromConfigJson(jsonPath);
